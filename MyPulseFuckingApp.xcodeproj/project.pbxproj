@@ -1,0 +1,720 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F561C7732B25C692002F53CA /* PublicButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = F561C7722B25C692002F53CA /* PublicButton.swift */; };
+		F561C7762B25D475002F53CA /* San-Francisco-Pro-Fonts-master in Resources */ = {isa = PBXBuildFile; fileRef = F561C7752B25D475002F53CA /* San-Francisco-Pro-Fonts-master */; };
+		F564E6D52B25BE1C00E9B30E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E6D42B25BE1C00E9B30E /* AppDelegate.swift */; };
+		F564E6D72B25BE1C00E9B30E /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E6D62B25BE1C00E9B30E /* SceneDelegate.swift */; };
+		F564E6D92B25BE1C00E9B30E /* HeartRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E6D82B25BE1C00E9B30E /* HeartRateViewController.swift */; };
+		F564E6DC2B25BE1C00E9B30E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F564E6DA2B25BE1C00E9B30E /* Main.storyboard */; };
+		F564E6DE2B25BE1D00E9B30E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F564E6DD2B25BE1D00E9B30E /* Assets.xcassets */; };
+		F564E6E12B25BE1D00E9B30E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F564E6DF2B25BE1D00E9B30E /* LaunchScreen.storyboard */; };
+		F564E6EC2B25BE1D00E9B30E /* MyPulseFuckingAppTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E6EB2B25BE1D00E9B30E /* MyPulseFuckingAppTests.swift */; };
+		F564E6F62B25BE1D00E9B30E /* MyPulseFuckingAppUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E6F52B25BE1D00E9B30E /* MyPulseFuckingAppUITests.swift */; };
+		F564E6F82B25BE1D00E9B30E /* MyPulseFuckingAppUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E6F72B25BE1D00E9B30E /* MyPulseFuckingAppUITestsLaunchTests.swift */; };
+		F564E7062B25BE3600E9B30E /* BaseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F564E7052B25BE3600E9B30E /* BaseViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F564E6E82B25BE1D00E9B30E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F564E6C92B25BE1C00E9B30E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F564E6D02B25BE1C00E9B30E;
+			remoteInfo = MyPulseFuckingApp;
+		};
+		F564E6F22B25BE1D00E9B30E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F564E6C92B25BE1C00E9B30E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F564E6D02B25BE1C00E9B30E;
+			remoteInfo = MyPulseFuckingApp;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F561C7722B25C692002F53CA /* PublicButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PublicButton.swift; sourceTree = "<group>"; };
+		F561C7752B25D475002F53CA /* San-Francisco-Pro-Fonts-master */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "San-Francisco-Pro-Fonts-master"; sourceTree = "<group>"; };
+		F564E6D12B25BE1C00E9B30E /* MyPulseFuckingApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPulseFuckingApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F564E6D42B25BE1C00E9B30E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F564E6D62B25BE1C00E9B30E /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		F564E6D82B25BE1C00E9B30E /* HeartRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeartRateViewController.swift; sourceTree = "<group>"; };
+		F564E6DB2B25BE1C00E9B30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F564E6DD2B25BE1D00E9B30E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F564E6E02B25BE1D00E9B30E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		F564E6E22B25BE1D00E9B30E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F564E6E72B25BE1D00E9B30E /* MyPulseFuckingAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPulseFuckingAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F564E6EB2B25BE1D00E9B30E /* MyPulseFuckingAppTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPulseFuckingAppTests.swift; sourceTree = "<group>"; };
+		F564E6F12B25BE1D00E9B30E /* MyPulseFuckingAppUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyPulseFuckingAppUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F564E6F52B25BE1D00E9B30E /* MyPulseFuckingAppUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPulseFuckingAppUITests.swift; sourceTree = "<group>"; };
+		F564E6F72B25BE1D00E9B30E /* MyPulseFuckingAppUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPulseFuckingAppUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		F564E7052B25BE3600E9B30E /* BaseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F564E6CE2B25BE1C00E9B30E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564E6E42B25BE1D00E9B30E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564E6EE2B25BE1D00E9B30E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F561C7712B25C67F002F53CA /* PublicButton */ = {
+			isa = PBXGroup;
+			children = (
+				F561C7722B25C692002F53CA /* PublicButton.swift */,
+			);
+			path = PublicButton;
+			sourceTree = "<group>";
+		};
+		F561C7742B25D458002F53CA /* Font */ = {
+			isa = PBXGroup;
+			children = (
+				F561C7752B25D475002F53CA /* San-Francisco-Pro-Fonts-master */,
+			);
+			path = Font;
+			sourceTree = "<group>";
+		};
+		F564E6C82B25BE1C00E9B30E = {
+			isa = PBXGroup;
+			children = (
+				F564E6D32B25BE1C00E9B30E /* MyPulseFuckingApp */,
+				F564E6EA2B25BE1D00E9B30E /* MyPulseFuckingAppTests */,
+				F564E6F42B25BE1D00E9B30E /* MyPulseFuckingAppUITests */,
+				F564E6D22B25BE1C00E9B30E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F564E6D22B25BE1C00E9B30E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F564E6D12B25BE1C00E9B30E /* MyPulseFuckingApp.app */,
+				F564E6E72B25BE1D00E9B30E /* MyPulseFuckingAppTests.xctest */,
+				F564E6F12B25BE1D00E9B30E /* MyPulseFuckingAppUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F564E6D32B25BE1C00E9B30E /* MyPulseFuckingApp */ = {
+			isa = PBXGroup;
+			children = (
+				F561C7742B25D458002F53CA /* Font */,
+				F561C7712B25C67F002F53CA /* PublicButton */,
+				F564E7042B25BE2700E9B30E /* Screens */,
+				F564E6D62B25BE1C00E9B30E /* SceneDelegate.swift */,
+				F564E6D42B25BE1C00E9B30E /* AppDelegate.swift */,
+				F564E6DA2B25BE1C00E9B30E /* Main.storyboard */,
+				F564E6DD2B25BE1D00E9B30E /* Assets.xcassets */,
+				F564E6DF2B25BE1D00E9B30E /* LaunchScreen.storyboard */,
+				F564E6E22B25BE1D00E9B30E /* Info.plist */,
+			);
+			path = MyPulseFuckingApp;
+			sourceTree = "<group>";
+		};
+		F564E6EA2B25BE1D00E9B30E /* MyPulseFuckingAppTests */ = {
+			isa = PBXGroup;
+			children = (
+				F564E6EB2B25BE1D00E9B30E /* MyPulseFuckingAppTests.swift */,
+			);
+			path = MyPulseFuckingAppTests;
+			sourceTree = "<group>";
+		};
+		F564E6F42B25BE1D00E9B30E /* MyPulseFuckingAppUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F564E6F52B25BE1D00E9B30E /* MyPulseFuckingAppUITests.swift */,
+				F564E6F72B25BE1D00E9B30E /* MyPulseFuckingAppUITestsLaunchTests.swift */,
+			);
+			path = MyPulseFuckingAppUITests;
+			sourceTree = "<group>";
+		};
+		F564E7042B25BE2700E9B30E /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				F564E7052B25BE3600E9B30E /* BaseViewController.swift */,
+				F564E7072B25BE8000E9B30E /* HeartRate */,
+			);
+			path = Screens;
+			sourceTree = "<group>";
+		};
+		F564E7072B25BE8000E9B30E /* HeartRate */ = {
+			isa = PBXGroup;
+			children = (
+				F564E70C2B25BED800E9B30E /* Analyzing */,
+				F564E70A2B25BEA400E9B30E /* AboutMe */,
+				F564E70B2B25BEC300E9B30E /* UserSettings */,
+				F564E7092B25BE9800E9B30E /* SetupViews */,
+				F564E7082B25BE8A00E9B30E /* SetupController */,
+			);
+			path = HeartRate;
+			sourceTree = "<group>";
+		};
+		F564E7082B25BE8A00E9B30E /* SetupController */ = {
+			isa = PBXGroup;
+			children = (
+				F564E70D2B25BEEC00E9B30E /* Controller */,
+				F564E70F2B25BF0200E9B30E /* ViewModel */,
+				F564E70E2B25BEF800E9B30E /* Extension */,
+			);
+			path = SetupController;
+			sourceTree = "<group>";
+		};
+		F564E7092B25BE9800E9B30E /* SetupViews */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = SetupViews;
+			sourceTree = "<group>";
+		};
+		F564E70A2B25BEA400E9B30E /* AboutMe */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AboutMe;
+			sourceTree = "<group>";
+		};
+		F564E70B2B25BEC300E9B30E /* UserSettings */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UserSettings;
+			sourceTree = "<group>";
+		};
+		F564E70C2B25BED800E9B30E /* Analyzing */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Analyzing;
+			sourceTree = "<group>";
+		};
+		F564E70D2B25BEEC00E9B30E /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F564E6D82B25BE1C00E9B30E /* HeartRateViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F564E70E2B25BEF800E9B30E /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		F564E70F2B25BF0200E9B30E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F564E6D02B25BE1C00E9B30E /* MyPulseFuckingApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F564E6FB2B25BE1D00E9B30E /* Build configuration list for PBXNativeTarget "MyPulseFuckingApp" */;
+			buildPhases = (
+				F564E6CD2B25BE1C00E9B30E /* Sources */,
+				F564E6CE2B25BE1C00E9B30E /* Frameworks */,
+				F564E6CF2B25BE1C00E9B30E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MyPulseFuckingApp;
+			productName = MyPulseFuckingApp;
+			productReference = F564E6D12B25BE1C00E9B30E /* MyPulseFuckingApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F564E6E62B25BE1D00E9B30E /* MyPulseFuckingAppTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F564E6FE2B25BE1D00E9B30E /* Build configuration list for PBXNativeTarget "MyPulseFuckingAppTests" */;
+			buildPhases = (
+				F564E6E32B25BE1D00E9B30E /* Sources */,
+				F564E6E42B25BE1D00E9B30E /* Frameworks */,
+				F564E6E52B25BE1D00E9B30E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F564E6E92B25BE1D00E9B30E /* PBXTargetDependency */,
+			);
+			name = MyPulseFuckingAppTests;
+			productName = MyPulseFuckingAppTests;
+			productReference = F564E6E72B25BE1D00E9B30E /* MyPulseFuckingAppTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F564E6F02B25BE1D00E9B30E /* MyPulseFuckingAppUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F564E7012B25BE1D00E9B30E /* Build configuration list for PBXNativeTarget "MyPulseFuckingAppUITests" */;
+			buildPhases = (
+				F564E6ED2B25BE1D00E9B30E /* Sources */,
+				F564E6EE2B25BE1D00E9B30E /* Frameworks */,
+				F564E6EF2B25BE1D00E9B30E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F564E6F32B25BE1D00E9B30E /* PBXTargetDependency */,
+			);
+			name = MyPulseFuckingAppUITests;
+			productName = MyPulseFuckingAppUITests;
+			productReference = F564E6F12B25BE1D00E9B30E /* MyPulseFuckingAppUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F564E6C92B25BE1C00E9B30E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					F564E6D02B25BE1C00E9B30E = {
+						CreatedOnToolsVersion = 15.0;
+					};
+					F564E6E62B25BE1D00E9B30E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F564E6D02B25BE1C00E9B30E;
+					};
+					F564E6F02B25BE1D00E9B30E = {
+						CreatedOnToolsVersion = 15.0;
+						TestTargetID = F564E6D02B25BE1C00E9B30E;
+					};
+				};
+			};
+			buildConfigurationList = F564E6CC2B25BE1C00E9B30E /* Build configuration list for PBXProject "MyPulseFuckingApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F564E6C82B25BE1C00E9B30E;
+			productRefGroup = F564E6D22B25BE1C00E9B30E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F564E6D02B25BE1C00E9B30E /* MyPulseFuckingApp */,
+				F564E6E62B25BE1D00E9B30E /* MyPulseFuckingAppTests */,
+				F564E6F02B25BE1D00E9B30E /* MyPulseFuckingAppUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F564E6CF2B25BE1C00E9B30E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564E6E12B25BE1D00E9B30E /* LaunchScreen.storyboard in Resources */,
+				F564E6DE2B25BE1D00E9B30E /* Assets.xcassets in Resources */,
+				F564E6DC2B25BE1C00E9B30E /* Main.storyboard in Resources */,
+				F561C7762B25D475002F53CA /* San-Francisco-Pro-Fonts-master in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564E6E52B25BE1D00E9B30E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564E6EF2B25BE1D00E9B30E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F564E6CD2B25BE1C00E9B30E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564E6D92B25BE1C00E9B30E /* HeartRateViewController.swift in Sources */,
+				F564E7062B25BE3600E9B30E /* BaseViewController.swift in Sources */,
+				F564E6D52B25BE1C00E9B30E /* AppDelegate.swift in Sources */,
+				F564E6D72B25BE1C00E9B30E /* SceneDelegate.swift in Sources */,
+				F561C7732B25C692002F53CA /* PublicButton.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564E6E32B25BE1D00E9B30E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564E6EC2B25BE1D00E9B30E /* MyPulseFuckingAppTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F564E6ED2B25BE1D00E9B30E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F564E6F82B25BE1D00E9B30E /* MyPulseFuckingAppUITestsLaunchTests.swift in Sources */,
+				F564E6F62B25BE1D00E9B30E /* MyPulseFuckingAppUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F564E6E92B25BE1D00E9B30E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F564E6D02B25BE1C00E9B30E /* MyPulseFuckingApp */;
+			targetProxy = F564E6E82B25BE1D00E9B30E /* PBXContainerItemProxy */;
+		};
+		F564E6F32B25BE1D00E9B30E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F564E6D02B25BE1C00E9B30E /* MyPulseFuckingApp */;
+			targetProxy = F564E6F22B25BE1D00E9B30E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F564E6DA2B25BE1C00E9B30E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F564E6DB2B25BE1C00E9B30E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		F564E6DF2B25BE1D00E9B30E /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F564E6E02B25BE1D00E9B30E /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F564E6F92B25BE1D00E9B30E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F564E6FA2B25BE1D00E9B30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F564E6FC2B25BE1D00E9B30E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYJ996Y32P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyPulseFuckingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladislavikys.MyPulseFuckingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		F564E6FD2B25BE1D00E9B30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYJ996Y32P;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = MyPulseFuckingApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIMainStoryboardFile = Main;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladislavikys.MyPulseFuckingApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		F564E6FF2B25BE1D00E9B30E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYJ996Y32P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladislavikys.MyPulseFuckingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPulseFuckingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyPulseFuckingApp";
+			};
+			name = Debug;
+		};
+		F564E7002B25BE1D00E9B30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYJ996Y32P;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladislavikys.MyPulseFuckingAppTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/MyPulseFuckingApp.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/MyPulseFuckingApp";
+			};
+			name = Release;
+		};
+		F564E7022B25BE1D00E9B30E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYJ996Y32P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladislavikys.MyPulseFuckingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyPulseFuckingApp;
+			};
+			name = Debug;
+		};
+		F564E7032B25BE1D00E9B30E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = QYJ996Y32P;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = vladislavikys.MyPulseFuckingAppUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = MyPulseFuckingApp;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F564E6CC2B25BE1C00E9B30E /* Build configuration list for PBXProject "MyPulseFuckingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564E6F92B25BE1D00E9B30E /* Debug */,
+				F564E6FA2B25BE1D00E9B30E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F564E6FB2B25BE1D00E9B30E /* Build configuration list for PBXNativeTarget "MyPulseFuckingApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564E6FC2B25BE1D00E9B30E /* Debug */,
+				F564E6FD2B25BE1D00E9B30E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F564E6FE2B25BE1D00E9B30E /* Build configuration list for PBXNativeTarget "MyPulseFuckingAppTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564E6FF2B25BE1D00E9B30E /* Debug */,
+				F564E7002B25BE1D00E9B30E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F564E7012B25BE1D00E9B30E /* Build configuration list for PBXNativeTarget "MyPulseFuckingAppUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F564E7022B25BE1D00E9B30E /* Debug */,
+				F564E7032B25BE1D00E9B30E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F564E6C92B25BE1C00E9B30E /* Project object */;
+}
