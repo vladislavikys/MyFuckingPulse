@@ -7,7 +7,7 @@
 
 import UIKit
 
-class HeartRateViewController: BaseViewController {
+class HeartRateController: BaseViewController {
     // Определение переменной для управления шириной (leading) контейнера.
     var leadingConstraint: NSLayoutConstraint!
     
@@ -27,6 +27,7 @@ class HeartRateViewController: BaseViewController {
     var scheduleLineImage = UIImageView()
     // Создание кнопки "Start" для начала измерения пульса.
     var startButton = PublicButton()
+    var progressBar: ProgressBar!
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,6 +36,7 @@ class HeartRateViewController: BaseViewController {
         // Установка текста заголовка контроллера на "Heart rate".
         titleLabel.text = "Heart rate"
         setupUI()
+        setupProgressbar()
     }
 
     // Приватный метод для настройки пользовательского интерфейса в контроллере.
@@ -62,7 +64,7 @@ class HeartRateViewController: BaseViewController {
         
         // Настройка метки для отображения состояния пальцев.
         fingersLabel.translatesAutoresizingMaskIntoConstraints = false
-        fingersLabel.font = .regularFont(size: 16)
+        fingersLabel.font = .systemFont(ofSize: 16)
         fingersLabel.textColor = UIColor(red: 0.114, green: 0.114, blue: 0.145, alpha: 1)
         fingersLabel.text = "No fingers"
         
@@ -80,14 +82,14 @@ class HeartRateViewController: BaseViewController {
         
         // Настройка метки для отображения результата.
         resultLabel.translatesAutoresizingMaskIntoConstraints = false
-        resultLabel.font = .mediumFont(size: 60)
+        resultLabel.font = .systemFont(ofSize: 60)
         resultLabel.text = "00"
         resultLabel.textColor = UIColor(red: 0.114, green: 0.114, blue: 0.145, alpha: 1)
         resultLabel.textAlignment = .center
         
         // Настройка метки для отображения "bpm".
         bpmLabel.translatesAutoresizingMaskIntoConstraints = false
-        bpmLabel.font = .mediumFont(size: 16)
+        bpmLabel.font = .systemFont(ofSize: 16)
         bpmLabel.text = "bpm"
         bpmLabel.textColor =  UIColor(red: 0.114, green: 0.114, blue: 0.145, alpha: 1)
         
@@ -106,9 +108,7 @@ class HeartRateViewController: BaseViewController {
         startButton.setTitle("Start", for: .normal)
         startButton.contentMode = .scaleAspectFit
         startButton.addTarget(self, action: #selector(startButtonAction), for: .touchUpInside)
-        
-        // Установка начальной позиции метки результата.
-        setupLeadingConstraintForResultLabel()
+    
         
         NSLayoutConstraint.activate([
             
@@ -130,14 +130,15 @@ class HeartRateViewController: BaseViewController {
 //            tutorialImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
 //            tutorialImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -250),
             
-            bpmLabel.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 165),
-            bpmLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -150),
-            
-            resultLabel.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 155),
-            resultLabel.leadingAnchor.constraint(equalTo: bpmLabel.trailingAnchor, constant: -100),
-            
             heartImage.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 143),
-            heartImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -156),
+            heartImage.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -166),
+            bpmLabel.topAnchor.constraint(equalTo: heartImage.bottomAnchor, constant: 3),
+            bpmLabel.trailingAnchor.constraint(equalTo: view.trailingAnchor, constant: -160),
+            
+            resultLabel.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 125),
+            resultLabel.leadingAnchor.constraint(equalTo: bpmLabel.trailingAnchor, constant: -120),
+            
+           
             
             crookedLineImage.bottomAnchor.constraint(equalTo: view.bottomAnchor, constant: -300),
             crookedLineImage.centerXAnchor.constraint(equalTo: view.centerXAnchor),
@@ -149,11 +150,18 @@ class HeartRateViewController: BaseViewController {
         ])
     }
     
-    // Метод для установки начального положения метки результата относительно метки "bpm".
-    func setupLeadingConstraintForResultLabel() {
-//        leadingConstraint = resultLabel.leadingAnchor.constraint(equalTo: bpm.trailingAnchor, constant: 100)
-//        leadingConstraint.isActive = true
+    private func setupProgressbar(){
+        progressBar = ProgressBar(frame: CGRect(x: 0, y: 0, width: 220, height: 220))
+        view.addSubview(progressBar)
+        NSLayoutConstraint.activate([
+            progressBar.topAnchor.constraint(equalTo: fingersLabel.topAnchor, constant: 50),
+            progressBar.centerXAnchor.constraint(equalTo: view.centerXAnchor),
+            progressBar.heightAnchor.constraint(equalToConstant: 220),
+            progressBar.widthAnchor.constraint(equalToConstant: 220)
+        ])
     }
+    
+   
     // Обработчик нажатия кнопки "Start".
     @objc private func startButtonAction() {
         // Запуск процесса измерения пульса.
